@@ -1,1 +1,1 @@
-# 1-YB-1 Degiskenler
+Düzenlenecek.
