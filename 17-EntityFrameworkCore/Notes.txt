@@ -1,0 +1,47 @@
+Entity Framework
+(ORM -Object Relational Mapping)
+
+Orm temel olarak db'de yer alan tablo ve alanlarý nesne olarak kullanmamýza olanak saðlayan bir yazýlým mimarisidir.
+
+ORM iliþkisel veritabaný ile nesneye yönelik programlama (OOP) arasýnda bir köprü görevi görür. Bu köprü db bilgilerimizi yönetmek için nesne modellerini kullandýðýmýz bir yapýdýr. 
+
+Kýsaca veritabanýna bizim nesnelerimiiz baðlayan ve bizin için veri alýþverisi yapan Microsoft tarafýndan geliþtirilmiþ bir frameworktür.
+
+EF Ado.Net alt yapýsýný kullanýr.
+
+EF ile 3 farklý yöntemde proje geliþtirilebilir:
+
+1-Code First (Yeni DB, kod yazarak)
+2-Database First (Mevcut DB'e baðlanma)
+3-Model First(Yeni DB, VS üzerinden model ile)
+
+Code First: 
+Bu yöntem classlarýmý VS tarafýnda oluþturmaya baþladýðýmýz bir yöntemdir. DB bu classlardan türetilir.
+
+Database First:
+Bu yöntem önceden oluþturulmuþ bir DB'i olan projelerde, DB'ye baðlanarak ilgili classlarýmýzýn EF aracýlýðý ile uygulama tarafýnda oluþturulmasýný saðlar.
+
+Model First:
+Bu yöntem VS üzerinde boþ bir model dosyasý(.edmx) eklenerek DB'yi bu model üzerinden tasarlayabilmemize olanak saðlar.
+
+EF CORE Code First Uygulamak için sýrasý ile:
+1-Yüklenecek Paketler:
+
+    Install-Package Microsoft.EntityFrameworkCore
+    Install-Package Microsoft.EntityFrameworkCore.Tools
+    Install-Package Microsoft.EntityFrameworkCore.SqlServer
+    Install-Package Microsoft.EntityFrameworkCore.Design
+
+2-Entitylerin Oluþturulmasý:
+    Product 
+    Category
+
+3-Context Sýnýfýnýn Oluþturulmasý:
+
+4-enable-migrations
+5-add-migration <isim verilir>
+6-update-database
+
+Entityler üzerinde yapýlacak olan herbir deðiþiklikten sonra bunu db ye yansýtmak için:
+        add-migration <isim verilir>
+        update-database

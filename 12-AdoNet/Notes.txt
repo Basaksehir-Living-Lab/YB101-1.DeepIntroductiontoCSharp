@@ -1,0 +1,18 @@
+﻿ADO.NET (ActiveX Data Object for .NET)
+
+.NET Framework'un bir parcası olarak microsoft tarafından geliştirilmiş ve çeşitli veritabanlarına bağlanmak için kullanılır.
+
+Ado.Net farklı dblere bağlanmak için çeşitli veri sağlayıcılar(providers) sunar.
+
+Sql Server:
+System.Data.SqlClient namespace'i altında bulunan SqlClient providerı kullanılır.
+
+OLEDB:
+System.Data.OleDb namespace'i altında bulunan OleDb providerı kullanılır.(MS Access, Oracle)
+
+Ado.Net'in başlıca bileşenleri:
+Connection	: DB'ye bağlantı için kullanılır.
+Command		: DB üzerinde Sql sorgu ve komutlarını çalıştırır.
+DataReader	: DB'den satır satır veri okur.
+DataSet		: Bellek içi veri saklama için kullanılır. 
+DataAdapter	: DB ve DataSet arasında veri taşımak için kullanılır.
