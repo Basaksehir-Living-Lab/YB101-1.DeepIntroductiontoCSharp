@@ -60,7 +60,7 @@ namespace YB_1_Degiskenler
 
             Değer tipli değişkenler (Value Type) : Ram'in stack adlı bölümünde tutulurlar. int, long, double, decimal, char, bool, byte, short
             Referans Tipli Değişkenler (Reference Type): Ram'in Heap adlı bölümünde tutulurlar: string, object, class, interface, array, delegate
-
+            test ediyoruz.
              */
 
 
